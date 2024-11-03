@@ -1,0 +1,22 @@
+{
+  "training": {
+    "latent_dim": 100,
+    "epochs": 500, 
+    "n_critic": 5,
+    "lambda_gp": 10,
+    "lr": 0.0002,
+    "betas": [0.5, 0.999],
+    "start_epoch": 1000,  
+    "batch_size": 32
+  },
+  "paths": {
+    "dataset_folder": "path/to/your/dataset",  
+    "generator_weights": "models/generator_epoch_1000.pth", 
+    "discriminator_weights": "models/discriminator_epoch_1000.pth",  
+    "save_dir": "models"  
+  },
+  "model": {
+    "img_size": 64,
+    "channels": 3  
+  }
+}

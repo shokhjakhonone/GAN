@@ -1,0 +1,28 @@
+{
+  "model": {
+    "name": "Hippocampus",
+    "latent_dim": 128,
+    "img_size": 64,
+    "channels": 3
+  },
+  "training": {
+    "epochs": 10,
+    "batch_size": 128,
+    "n_critic": 5,
+    "lambda_gp": 10,
+    "lr": 0.00005,
+    "betas": [0.5, 0.999]
+  },
+  "paths": {
+    "dataset_folder": "session1,session2 ",
+    "output_folder": "generated_images",
+    "model_save_folder": "saved_models"
+  },
+  "image_processing": {
+    "transform": {
+      "resize": [64, 64],
+      "normalize_mean": [0.5],
+      "normalize_std": [0.5]
+    }
+  }
+}
